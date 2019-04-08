@@ -10,7 +10,22 @@ module.exports = api => {
     // 更多信息（More info）链接的地址
     link: 'https://github.com/lesssn/vue-cli-plugin-tutorial',
     // 项目配置的图标
-    icon: 'application_settings'
+    icon: 'application_settings',
+    // 必选：配置项目配置选项，与prompts.js的规则相同
+    onRead: ({ data, cwd }) => ({
+      prompts: [
+        // 提示符对象
+      ]
+    }),
+    // 必选: 使用 onWrite钩子将数据写入配置文件 (或者执行任何 Node.js 代码)
+    onWrite: ({ prompts, answers, data, files, cwd, api }) => {
+      // prompts: 当前提示符们的运行时对象
+      // answers: 来自用户输入的回答数据
+      // data: 从配置文件读取的只读的初始化数据
+      // files: 被找到的文件的描述器 ({ type: 'json', path: '...' })
+      // cwd: 当前工作目录
+      // api: onWrite API
+    }
   })
 
   // 配置任务(扩展package.json中已经存在的任务)

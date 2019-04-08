@@ -2,6 +2,7 @@
 > vue-cli 3.x的项目演示教程，尽量在源码中提供详尽的注释方便快速掌握vue-cli脚本的开发方法
 
 TODO
+- [x] 详细的describeConfig
 - [x] ejs
 - [x] 客户端插件
 - [x] 自定义视图
