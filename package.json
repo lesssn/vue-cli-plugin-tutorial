@@ -1,0 +1,31 @@
+{
+  "name": "vue-cli-plugin-tutorial",
+  "version": "0.0.1",
+  "description": "demo for vue-cli 3.x plugin",
+  "main": "index.js",
+  "homepage": "https://github.com/lesssn/vue-cli-plugin-tutorial#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo",
+    "tutorial",
+    "vue",
+    "vue-cli",
+    "vue-cli-plugin"
+  ],
+  "author": "lesssn@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lesssn/vue-cli-plugin-tutorial/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesssn/vue-cli-plugin-tutorial"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@vue/cli": "^3.5.5"
+  }
+}
