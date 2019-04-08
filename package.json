@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-tutorial",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "demo for vue-cli 3.x plugin",
   "main": "index.js",
   "homepage": "https://github.com/lesssn/vue-cli-plugin-tutorial#readme",
