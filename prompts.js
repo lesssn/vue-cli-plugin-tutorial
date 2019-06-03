@@ -1,4 +1,4 @@
-/* 置自定义选项: 在初始化插件的时候会作为options传递给generator实例（generator.js或者generator/index.js中的导出函数中的参数）
+/* 自定义选项: 在初始化插件的时候会作为options传递给generator实例（generator.js或者generator/index.js中的导出函数中的参数）
 *   - 本文件要求导出inquirer对象数组: https://github.com/SBoudrias/Inquirer.js#question
 *   - 选项即会出现在命令中，也会出现在ui中（添加插件后提示进行相关选项设置）
 *   - 可添加额外字段（仅在vue-cli ui界面会显示）

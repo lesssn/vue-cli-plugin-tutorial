@@ -7,9 +7,15 @@
 *   - rootOptions: preset (presets.foo) 将会作为第三个参数传入, TODO: 具体含义不明确
 * */
 module.exports = (api, options, rootOptions) => {
-  // 渲染文件，可用于拷贝文件（也可以添加额外的数据渲染文件）, 渲染使用ejs进行渲染
-  api.render({ './src/vue-cli-demo.js': './templates/main.js' })
+  // 渲染文件，<目标文件> <> 可用于拷贝文件（也可以添加额外的数据渲染文件）, 渲染使用ejs进行渲染
+  api.render({
+    './src/vue-cli-demo.js': './templates/src/main.js',
+    './src/plugins/demo.js': './templates/src/demo.js'
+  })
   // api.render('./template')   // 复制./template下的所有文件，并使用ejs进行渲染
+
+  // 注入import: <待注入文件> <import语句>。往往用于在main.js中导入滋生的脚本
+  api.injectImports('./src/main.js', `import './plugins/demo.js'`)
 
   // 扩展项目的package.json文件
   api.extendPackage({
